@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Selectors</title>
+    <style>
+
+      /*
+      Tüm h1'leri seç
+      */
+      h1{
+       color:black;
+       background: burlywood; 
+      }
+      p {
+        color:blueviolet;
+        background-color: blanchedalmond;
+      } 
+      /*
+      h1 ve p'lerin aynı özelliklere sahip olmasını 
+      istiyorsak şöyle yapıyoruz: 
+
+      h1,p {
+        color: black;
+        background: burlywood;
+
+      }
+      
+      */
+
+      /*
+      Sadece id'si logo olan h1'de 
+      değişiklik yapmak istersem: 
+      
+      #logo{
+        color: red;
+        background: blue; 
+      }
+      
+      */
+
+      /*
+      class'ı sadece info olan 
+      p'leri seçmek için: 
+      .info {
+        color:red;
+        background: blue;
+      }
+      */
+
+      /* 
+      Link'lerin altındaki çizgileri
+      kaldırmak için: 
+
+      a{
+        text-decoration: none;
+      } 
+      */
+
+      /*
+      Bütün a etiketleri yerine
+      ul'deki li'nin içindeki
+      a etiketini seçmek istiyorsam: 
+
+      ul li a {
+        text-decoration: none;
+      }
+      */
+
+      /* class'ı info olanların 
+      altındaki span'leri seçmek için: 
+
+      .info span {
+        color: red;
+      } */
+
+      /*
+      class'ı info olanların class'ı primary
+      olanlarını seçmek için: 
+
+       .info .primary {
+        color:red;
+      } 
+      */
+
+      /* 
+      HTML sayfamızdaki tüm etiketleri 
+    seçmek için:
+      * {
+        font-size: 20px;
+    
+      } 
+      */
+
+      /* 
+      CSS'teki bütün selector'lar için:
+      https://www.w3schools.com/cssref/css_selectors.php 
+      */
+
+    </style>
+  </head>
+  <body>
+      <h1>Header 1</h1>
+      <h1 id="logo">Logo</h1>
+
+      <ul>
+        <li>
+          <a href="#">Services</a>
+        </li>
+      </ul>
+    </header>
+    <h1>Header 2</h1>
+    <p class="lead info">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus est libero
+      nesciunt error nostrum nisi. Cupiditate et reiciendis quas blanditiis
+      ratione rem officiis fuga unde dolores est, ipsam sunt culpa!
+    </p>
+    <p class="info">
+      Lorem ipsum <span class="primary"> dolor</span>dolor sit amet consectetur
+      adipisicing elit. Fugiat, in perferendis, vitae eligendi deleniti
+      perspiciatis officia asperiores ea voluptates tenetur dolor dicta dolore
+      voluptatem. Dolor odio quos exercitationem quod voluptatibus.
+    </p>
+    <p class="info">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+      adipisci magnam cumque sit a? Nihil veritatis, totam illum dolorem,
+      architecto non ullam facere temporibus error impedit ut nesciunt quas
+      cumque!
+    </p>
+    <p>Test Paragraph</p>
+    <a href="#">Home</a>
+  </body>
+</html>
